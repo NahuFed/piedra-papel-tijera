@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .btn{
+    height: 12rem;
+    width: 20rem;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
