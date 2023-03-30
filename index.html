@@ -19,9 +19,9 @@
  <main class="container"> 
     <p>Haga click en piedra papel o tijera para jugar</p>
     <section class="row mb-4">
-        <div class="col-md-4 "><button type="button" class="btn btn-primary fs-1">Piedra<br> 👊</button></div>
-        <div class="col-md-4 my-md-0 my-5"><button type="button" class="btn btn-danger fs-1">Papel <br>🖐</button></div>
-        <div class="col-md-4"><button type="button" class="btn btn-success fs-1">Tijera <br>✌</button></div>
+        <div class="col-md-4 "><button type="button" class="btn btn-primary fs-1" id="btnPiedra">Piedra<br> 👊</button></div>
+        <div class="col-md-4 my-md-0 my-5"><button type="button" class="btn btn-danger fs-1" id="btnPapel">Papel <br>🖐</button></div>
+        <div class="col-md-4"><button type="button" class="btn btn-success fs-1" id="btnTijera">Tijera <br>✌</button></div>
     </section>
 
     <div class="d-flex justify-content-around w-100">
@@ -33,12 +33,12 @@
                 </tr>
             </thead>
             <tbody>
-                <td>eleccion</td>
-                <td>eleccionComputadora</td>
+                <td id="eleccionJugador">eleccion</td>
+                <td id="eleccionComputadora">eleccionComputadora</td>
             </tbody>
         </table>
     </div>
-    <p><b>Gana ganador!</b></p>
+    <p><b id="resultado">Gana ganador!</b></p>
 
     <h2>Resultados</h2>
 
@@ -49,13 +49,15 @@
                 <th>Partidas Jugadas</th>
                 <th>Gano Jugador</th>
                 <th>Gano CPU</th>
+                <th>Empates</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>. </td>
-                <td>. </td>
-                <td>. </td>
+                <td id="jugadas">&nbsp</td>
+                <td id="ganadas"> </td>
+                <td id="perdidas"> </td>
+                <td id="empatadas"> </td>
             </tr>
         </tbody>      
         
