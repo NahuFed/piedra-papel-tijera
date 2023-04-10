@@ -29,3 +29,11 @@ table{
 table th, tr, td{  
     width: 25%
 }
+
+@media screen and (max-width: 768px) {
+    .container .btn{
+        height: 6rem;
+        width: 10rem;
+    }
+    
+}

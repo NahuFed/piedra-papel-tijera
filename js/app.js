@@ -15,33 +15,33 @@ const jugarPiedraPapelTijeras = (eleccion, eleccionComputadora) => {
     case "piedra":
       switch (eleccionComputadora) {
         case "piedra":
-          return "empate";
+          return "Empate 😐";
         case "papel":
-          return "gana computadora";
+          return "Perdiste :(";
         case "tijera":
-          return "gana jugador";
+          return "Felicidades ganaste! 🎉";
       }
       break;
     case "2":
     case "papel":
       switch (eleccionComputadora) {
         case "piedra":
-          return "gana jugador";
+          return "Felicidades ganaste! 🎉";
         case "papel":
-          return "empate";
+          return "Empate 😐";
         case "tijera":
-          return "gana computadora";
+          return "Perdiste :(";
       }
       break;
     case "3":
     case "tijera":
       switch (eleccionComputadora) {
         case "piedra":
-          return "gana computadora";
+          return "Perdiste :(";
         case "papel":
-          return "gana jugador";
+          return "Felicidades ganaste! 🎉";
         case "tijera":
-          return "empate";
+          return "Empate 😐";
       }
       break;
   }
@@ -91,9 +91,9 @@ function tijera() {
 }
 
 function contadores(resultado) {
-  if (resultado === "gana jugador") {
+  if (resultado === "Felicidades ganaste! 🎉") {
     ganoJugador++;
-  } else if (resultado === "gana computadora") {
+  } else if (resultado === "Perdiste :(") {
     ganoComputadora++;
   } else {
     empates++;
